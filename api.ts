@@ -1,3 +1,6 @@
+/**
+ * The Adobe Connect API
+ */
 export interface connectApp {
   Window: Window;
 }
