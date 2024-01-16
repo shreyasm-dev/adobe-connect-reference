@@ -1,0 +1,5 @@
+{
+  "tasks": {
+    "docs": "deno doc --html --name=\"Adobe Connect API\" api.ts"
+  }
+}
