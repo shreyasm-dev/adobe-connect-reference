@@ -1,0 +1,3 @@
+(function () {
+  window.DENO_DOC_SEARCH_INDEX = {"nodes":[{"kind":"interface","name":"connectApp","file":".","nsQualifiers":"","location":{"filename":".","line":1,"col":0},"declarationKind":"export"},{"kind":"interface","name":"Window","file":".","nsQualifiers":"","location":{"filename":".","line":8,"col":0},"declarationKind":"export"},{"kind":"typeAlias","name":"WindowDimension","file":".","nsQualifiers":"","location":{"filename":".","line":123,"col":0},"declarationKind":"export"}]};
+})()
