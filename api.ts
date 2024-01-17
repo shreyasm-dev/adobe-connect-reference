@@ -2,7 +2,105 @@
  * The Adobe Connect API
  */
 export interface connectApp {
+  /**
+   * The login page API (TODO)
+   */
+  LoginPage: LoginPage;
+
+  /**
+   * Check for updates (TODO)
+   */
+  checkForUpdates(): unknown;
+
+  /**
+   * Check if the app is old (TODO)
+   */
+  hasOldApp(): unknown;
+
+  /**
+   * Launch the old app (TODO)
+   */
+  launchOldApp(): unknown;
+
+  /**
+   * Save the session (TODO)
+   */
+  saveSession(): unknown;
+
+  /**
+   * Launch a URL (TODO)
+   */
+  launchUrl(): unknown;
+
+  /**
+   * Set the device change callback (???) (TODO)
+   */
+  setDeviceChangeCallback(): unknown;
+
+  /**
+   * Set the recovery URL (TODO)
+   */
+  setRecoveryUrl(): unknown;
+
+  /**
+   * Get the recovery URL (TODO)
+   */
+  getRecoveryUrl(): unknown;
+
+  /**
+   * Get the app version (TODO)
+   */
+  appVersion(): unknown;
+
+  /**
+   * Get the API version (TODO)
+   */
+  apiVersion(): unknown;
+
+  /**
+   * Check if the app supports a feature (TODO)
+   */
+  supportsFeature(): unknown;
+
+  /**
+   * The camera manager API (TODO)
+   */
+  CameraMgr: CameraMgr;
+
+  /**
+   * The window API
+   */
   Window: Window;
+
+  /**
+   * The palette panel API (TODO)
+   */
+  palettePanel: PalettePanel;
+
+  /**
+   * The audio player API (TODO)
+   */
+  AudioPlayer: AudioPlayer;
+
+  /**
+   * The microphone manager API (TODO)
+   */
+  MicrophoneMgr: MicrophoneMgr;
+
+  /**
+   * The meeting connection API (TODO)
+   */
+  meetingConn: MeetingConn;
+
+  /**
+   * The offline recorder API (TODO)
+   */
+  OfflineRecorder: OfflineRecorder;
+
+  /**
+   * The gateway manager API (TODO)
+   */
+  GatewayMgr: GatewayMgr;
 }
 
 /**
