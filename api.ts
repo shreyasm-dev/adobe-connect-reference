@@ -127,3 +127,68 @@ export type WindowDimension = {
   cx: number;
   cy: number;
 };
+
+/**
+ * Toast manager
+ */
+export interface ToastManager {
+  /**
+   * Close all toasts
+   */
+  closeAllToasts(): boolean;
+
+  /**
+   * Create a toast
+   */
+  createToast(
+    szTitle: string,
+    szMessage: string,
+    bMsgClickable: boolean,
+    szBtn1: string,
+    szBtn2: string,
+    toastIcon?: string
+  ): ToastWindow | null;
+
+  /**
+   * Create a timed toast
+   */
+  createTimedToast(
+    szTitle: string,
+    szMessage: string,
+    bMsgClickable: boolean,
+    szBtn1: string,
+    szBtn2: string,
+    nTimeout: number,
+    toastIcon?: string
+  ): ToastWindow | null;
+
+  /**
+   * Get the visible toast count
+   */
+  visibleToastCount(): number;
+
+  /**
+   * Set the event handler
+   */
+  setEventHandler(eventHandler: (event: Event) => void): void;
+}
+
+/**
+ * Toast window
+ */
+export interface ToastWindow {
+  /**
+   * Get the window id
+   */
+  id(): number;
+
+  /**
+   * Show the toast
+   */
+  showToast(): boolean;
+
+  /**
+   * Remove the toast
+   */
+  removeToast(): boolean;
+}
